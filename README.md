@@ -1,5 +1,8 @@
 # Data_Analytics
 Curso Coderhouse - Data Analytics
+Motor: PostgreSQL 18.6.3
+Script DDL/DML y consultas analíticas de agregación sobre ventas y productos.
+
 
 INDEX entregables: 
 
