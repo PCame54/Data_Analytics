@@ -1,7 +1,6 @@
 -- Motor utilizado: PostgreSQL 18.6.3
 
-/*SECCIÓN 1 - DROP: Se eliminan las tablas en orden inverso a sus dependencias siendo la primera la que contendrían
-claves foráneas para evitar violaciones de integridad referencial*/
+--SECCIÓN 1 - DROP: Se eliminan primero las tablas que contienen las claves foráneas.
 
 DROP TABLE IF EXISTS ventas;
 DROP TABLE IF EXISTS productos;
@@ -61,7 +60,7 @@ INSERT INTO clientes (id_cliente, nombre, email, ciudad, fecha_registro) VALUES
     (4, 'Pedro Sanz',     'pedro@mail.com',     'Mendoza',        '2024-02-15'),
     (5, 'Laura Torres',   'laura@mail.com',     'Tucumán',        '2024-03-01');
 
---c) Categpría PRODUCTOS: 6 registros
+--c) Categoría PRODUCTOS: 6 registros
 INSERT INTO productos (id_producto, nombre_producto, id_categoria, precio, stock, activo) VALUES
     (1, 'Laptop Pro 15',      1, 1200.00, 15, TRUE),
     (2, 'Mouse Inalámbrico',  2,   28.00, 80, TRUE),
@@ -70,7 +69,7 @@ INSERT INTO productos (id_producto, nombre_producto, id_categoria, precio, stock
     (5, 'SSD Externo 1TB',    4,  130.00, 18, TRUE),
     (6, 'Teclado Mecánico',   2,   95.00, 40, TRUE);
 
---d) Categpría VENTAS: 10 registros
+--d) Categoría VENTAS: 10 registros
 INSERT INTO ventas (id_venta, id_cliente, id_producto, cantidad, precio_unitario, fecha_venta) VALUES
     ( 1, 1, 1, 2, 1200.00, '2024-03-05'),
     ( 2, 2, 2, 5,   28.00, '2024-03-06'),
