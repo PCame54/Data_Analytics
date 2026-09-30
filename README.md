@@ -13,7 +13,7 @@ Pre-entrega n°3: Contenido FILE: ventas_tech_db.sql
     Se incertan los datos dentro de cada tabla a fin de tener información para revisar
     Finalmente se valida que las tablas creadas y datos ingresados se detallen de manera correcta
 
-
+---------------------------------------------------------------------------------------------------------------------
 
 Pre-entrega n°4: Contenido FILE: m4_consultas_negocio.sql
     Utilizando la tabla generada en la entrega n°3 'ventas_tech_db.sql' se trabaja con los datos ingresados 
