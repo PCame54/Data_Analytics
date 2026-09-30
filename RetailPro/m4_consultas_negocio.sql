@@ -50,15 +50,22 @@ ORDER BY total_gastado DESC;
 que etiquete con CASE WHEN si ese mes quedó 'por encima' o 'por debajo' del promedio mensual general. */
 
 SELECT 
-   EXTRACT (MONTH FROM fecha_venta) AS mes,
-   SUM (cantidad * precio_unitario) AS total_facturado,
-   CASE
-       WHEN SUM (cantidad * precio_unitario) >= (SELECT AVG(cantidad * precio_unitario) FROM ventas)
-           THEN 'Por encima'
-       ELSE 'Por debajo'
-   END AS estado_promedio
+    EXTRACT(MONTH FROM fecha_venta) AS mes,
+    SUM(cantidad * precio_unitario) AS total_facturado,
+    CASE
+        WHEN SUM(cantidad * precio_unitario) >= (
+            -- Subconsulta: promedio de los totales mensuales
+            SELECT AVG(total_mes)
+            FROM (
+                SELECT SUM(cantidad * precio_unitario) AS total_mes
+                FROM ventas
+                GROUP BY EXTRACT(MONTH FROM fecha_venta)
+            ) AS ventas_mensuales
+        ) THEN 'Por encima'
+        ELSE 'Por debajo'
+    END AS estado_promedio
 FROM ventas
-GROUP BY EXTRACT (MONTH FROM fecha_venta)
+GROUP BY EXTRACT(MONTH FROM fecha_venta)
 ORDER BY mes;
 
 
@@ -71,5 +78,6 @@ las ventas del producto 1 o 3.
 
 3) Los clientes más recurrentes hicieron dos pedidos, pero los clientes (id_1) y (id_5) son los que más están gastando
 en equipamiento tech concentrando un 74% de las ventas del mes.
+
 
 
