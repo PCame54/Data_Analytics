@@ -29,3 +29,15 @@ Pre-entrega n°5: Contenido FILE: m5_consultas_joins.sql
     Consulta 2 (Clientes sin ventas - LEFT JOIN): Se identifican clientes registrados que no registran compras mediante LEFT JOIN y WHERE IS NULL
     Consulta 3 (Productos sin ventas - LEFT JOIN): Se detectan artículos del catálogo sin movimiento comercial mediante LEFT JOIN y WHERE IS NULL
     Consulta 4 (Consolidado por canal - UNION ALL): Se dividen las ventas por período generando una columna literal de canal (Online / Presencial), apilando los registros sin pérdida de datos y totalizando con GROUP BY.
+
+---------------------------------------------------------------------------------------------------------------------
+
+Pre-entrega n°6: Contenido CARPETA: TechStore
+    Proyecto de ingesta y pipeline ETL utilizando Power BI Desktop, Power Query y lenguaje M sobre el dataset 'TechStore'.
+        Archivo de respaldo: Pipeline_ETL_Pablo_Camerotto.pbix
+        Documento de entrega: Pipeline_ETL_Pablo_Camerotto.pdf
+        Perfilado y calidad de datos: Detección y saneamiento de anomalías intencionales (eliminación de duplicados por clave primaria y resolución técnica justificada de valores nulos en dimensiones de clientes y productos).
+        Modelado dimensional: Estandarización de tablas (Dim_Clientes, Dim_Productos, Dim_Categorias, Fact_Ventas) con tipado de datos estricto.
+        Transformación: Merge (Left Outer Join) en la tabla Fact_Ventas para desnormalizar y añadir el nombre del producto y su categoría.
+        Documentación técnica: Comentarios justificados con doble barra (//) en el Editor Avanzado de Lenguaje M explicando el impacto analítico de los pasos aplicados.
+        Verificación final.
