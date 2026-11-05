@@ -45,8 +45,15 @@ Pre-entrega n°6: Contenido CARPETA: TechStore
 ----------------------------------------------------------------------------------------------------------------------
 
 Pre-entrega n°7: Archivo .svg - Boceto del Dashboard Retail Pro
-    Disponible en carpeta RetailPro
-
+** Archivo disponible en carpeta RetailPro
+Boceto del Dashboard RetailPro
+- Se detalla título de la compañía (con su logo)
+- Mantiene paleta de colores uniforme y acorde a la compañía
+- Incluye título del Dashboard
+- Dispone de 4 KPIs indicados
+- Incluye gráfico de líneas para identificar temporalidades y establece comparativa entre los dos canlaes de ventas
+- Establece comparativa de resultado de ventas para las distintas categorías de productos
+- Incluye tabla de ventas
 ----------------------------------------------------------------------------------------------------------------------
 
 Pre-entrega n°8: Contenido en CARPETA: RetailPro
