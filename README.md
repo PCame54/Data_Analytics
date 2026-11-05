@@ -46,7 +46,7 @@ Pre-entrega n°6: Contenido CARPETA: TechStore
 
 Pre-entrega n°7: Archivo .svg - Boceto del Dashboard Retail Pro
 ** Archivo disponible en carpeta RetailPro
-Boceto del Dashboard RetailPro
+Dispone de: 
 - Se detalla título de la compañía (con su logo)
 - Mantiene paleta de colores uniforme y acorde a la compañía
 - Incluye título del Dashboard
@@ -57,7 +57,8 @@ Boceto del Dashboard RetailPro
 ----------------------------------------------------------------------------------------------------------------------
 
 Pre-entrega n°8: Contenido en CARPETA: RetailPro
-Se incorpora el archivo "Camerotto_Pablo_Checkpoint2.pbix" con la resolución completa del Módulo 8
+** Archivo disponible en carpeta RetailPro "Camerotto_Pablo_Checkpoint2.pbix" con la resolución completa del Módulo 8
+Dispone de: 
 - Modelo de datos: Esquema estrella con relaciones 1:N
 - Dim_Fechas marcada como tabla fechas con las medidas de tiempo solicitadas
 - Contenedor _Medidas estructurado
