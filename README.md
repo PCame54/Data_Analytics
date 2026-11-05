@@ -41,3 +41,23 @@ Pre-entrega n°6: Contenido CARPETA: TechStore
         Transformación: Merge (Left Outer Join) en la tabla Fact_Ventas para desnormalizar y añadir el nombre del producto y su categoría.
         Documentación técnica: Comentarios justificados con doble barra (//) en el Editor Avanzado de Lenguaje M explicando el impacto analítico de los pasos aplicados.
         Verificación final.
+
+----------------------------------------------------------------------------------------------------------------------
+
+Pre-entrega n°7: Archivo .svg - Boceto del Dashboard Retail Pro
+    Disponible en carpeta RetailPro
+
+----------------------------------------------------------------------------------------------------------------------
+
+Pre-entrega n°8: Contenido en CARPETA: RetailPro
+Se incorpora el archivo "Camerotto_Pablo_Checkpoint2.pbix" con la resolución completa del Módulo 8
+- Modelo de datos: Esquema estrella con relaciones 1:N
+- Dim_Fechas marcada como tabla fechas con las medidas de tiempo solicitadas
+- Contenedor _Medidas estructurado
+- Métricas DAX avanzadas:
+   * Modificación de contexto de filtro con Calculate
+   * Acumulados temporales (Total YTD)
+   * Optimización con variables VAR / Return y división con Divide
+- Validación en formato Matriz con variaciones interanuales y acumulados YTD.
+
+
